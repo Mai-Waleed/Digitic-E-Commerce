@@ -1,0 +1,73 @@
+@import url(cssStyle.css);
+@import url(userLogin_Reg.css);
+
+.wishlist-products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 15px;
+    padding: 20px 10px;
+}
+.wishlist-products .wishlist-product {
+    width: 22%;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s;
+    min-width: 200px;
+}
+.wishlist-products .wishlist-product .img-container img {
+    width: 100%;
+}
+.wishlist-products .wishlist-product .img-information {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+}
+.wishlist-products .wishlist-product .img-information a {
+    color: var(--p-color);
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .2s;
+}
+.wishlist-products .wishlist-product .img-information a:hover {
+    color: var(--ora-color);
+}
+.wishlist-products .wishlist-product .img-information span {
+    color: var(--p-color);
+    font-size: 15px;
+    margin: 15px 0;
+    font-family: 'Font Awesome 6 Free';
+}
+.wishlist-products .wishlist-product .img-information button {
+    display: inline;
+    width: fit-content;
+    margin-bottom: 10px;
+    border: 0;
+    background-color: var(--ora-color);
+    color: var(--p-color);
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: all .4s;
+}
+.wishlist-products .wishlist-product .img-information button:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+.wishlist-products .wishlist-product i {
+    position: absolute;
+    right: -100px;
+    top: 15px;
+    transition: all .4s;
+    font-size: 15px;
+}
+.wishlist-products .wishlist-product:hover i{
+    right: 15px;
+}
+.wishlist-products .wishlist-product i:hover {
+    background-color: var(--ora-color);
+    padding: 5px 7px;
+    border-radius: 30px;
+}

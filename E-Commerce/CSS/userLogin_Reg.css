@@ -1,0 +1,92 @@
+@import url(cssStyle.css);
+
+body {
+    background-color: #efeff1;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.nav-reg,
+.nav-login {
+    padding: 20px 0;
+    background: white;
+}
+
+.nav-reg ul a,
+.nav-login ul a {
+    color: var(--p-color);
+}
+
+section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+section form input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+    transition: all .1s;
+}
+
+section form input:hover {
+    /* border: 4px solid var(--background-color); */
+    outline: 3px solid var(--background-color);
+}
+
+section form button {
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 0;
+    background: var(--ora-color);
+    color: var(--p-color);
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+section form button:hover {
+    background-color: var(--background-color);
+    color: white;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading p {
+    margin-top: 10px;
+    color: #777;
+}
+
+form a {
+    align-self: start;
+    color: #777;
+}
+
+form a.no-acount {
+    margin-top: 10px;
+    align-self: center;
+}
+
+#forget {
+    display: none;
+}
